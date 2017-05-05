@@ -1,0 +1,15 @@
+doctype html
+html
+  head
+    title Spike Static Components Example
+    link(rel='stylesheet' href='/css/index.css')
+  body
+    p React devtools work on this page, feel free to open them up and look around!
+
+    static-only(foo='bar')
+      p child element
+    static-and-client(foo='bar')
+      p child element
+    #client-root
+
+    script(src='/js/main.js' defer)
