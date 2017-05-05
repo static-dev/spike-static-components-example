@@ -1,6 +1,6 @@
 # spike-static-components-example
 
-example of how to use static and client rendered preact components with spike
+An example of how to use static and client rendered preact components with spike
 
 ## Setup
 
@@ -10,7 +10,13 @@ example of how to use static and client rendered preact components with spike
 - run `npm install`
 - run `spike watch` or `spike compile`
 
-## Testing
-Tests are located in `test/**` and are powered by [ava](https://github.com/sindresorhus/ava)
-- `npm install` to ensure devDeps are installed
-- `npm test` to run test suite
+## Architecture
+
+This is an entirely unique architecture pattern, to the best of our knowledge nothing else similar to this exists right now. So take a moment to let it sink in. As a simple guide:
+
+- Preact components are in `assets/js/components`
+- Client render is in `assets/js/index.js`
+- Static implementation is in `views/index.sgr`
+- "Server render" configuration is in `app.js`
+
+Happy to field any questions about this on twitter at [@jescalan](https://twitter.com/jescalan), or better yet in [the static-dev slack](https://static-dev-slack.herokuapp.com/) :grin:
