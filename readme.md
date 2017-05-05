@@ -1,5 +1,7 @@
 # spike-static-components-example
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/static-dev/spike-static-components-example.svg)](https://greenkeeper.io/)
+
 example of how to use static and client rendered preact components with spike
 
 ## Setup
