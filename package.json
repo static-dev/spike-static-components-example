@@ -12,6 +12,7 @@
     "babel-register": "^6.24.1",
     "reshape-preact-ssr": "^0.3.0",
     "reshape-standard": "^1.0.0",
+    "spike": "^1.3.0",
     "spike-css-standards": "^1.0.0",
     "spike-js-standards": "^2.0.1",
     "spike-page-id": "^1.0.0",
