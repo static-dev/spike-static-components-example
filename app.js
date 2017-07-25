@@ -2,7 +2,7 @@ const htmlStandards = require('reshape-standard')
 const cssStandards = require('spike-css-standards')
 const _jsStandards = require('spike-js-standards')
 const preactBabel = require('babel-preset-preact')
-const ssr = require('reshape-preact-ssr')
+const renderComponents = require('reshape-preact-components')
 
 // we need the preact babel plugin to process jsx
 // and we need babel-register to require these files and have their jsx
@@ -13,14 +13,11 @@ const staticOnly = require('./assets/js/components/static-only')
 const staticAndClient = require('./assets/js/components/static-and-client')
 
 module.exports = {
-  matchers: {
-    html: '*(**/)*.sgr',
-    css: '*(**/)*.sss'
-  },
+  matchers: { html: '*(**/)*.sgr', css: '*(**/)*.sss' },
   ignore: ['**/layout.sgr', '**/_*', '**/.*', 'readme.md', 'yarn.lock'],
   reshape: htmlStandards({
     // here we pair a custom element name to a preact component
-    appendPlugins: [ssr({
+    appendPlugins: [renderComponents({
       'static-only': staticOnly,
       'static-and-client': staticAndClient
     })]

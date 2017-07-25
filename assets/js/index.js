@@ -1,6 +1,6 @@
 import 'preact/devtools'
 import {h, render} from 'preact'
-import {hydrateInitialState} from 'reshape-preact-ssr'
+import {hydrateInitialState} from 'reshape-preact-components'
 import ClientOnly from './components/client-only'
 import StaticAndClient from './components/static-and-client'
 
